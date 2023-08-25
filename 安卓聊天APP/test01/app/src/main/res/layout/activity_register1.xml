@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册界面"
+            android:background="#EEE"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:textColor="#00F"
+            />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:background="#D0F0F0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名4-10字符..."
+            android:id="@+id/ruser"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码..."
+            android:id="@+id/rpassword"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="确认密码"
+            android:id="@+id/rpassword02"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择性别："
+                android:textSize="20dp"
+                android:textColor="#000"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_sex">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="#000"
+                    android:id="@+id/sexButton1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="#000"
+                    android:id="@+id/sexButton2"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="50dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:id="@+id/register"
+                android:layout_margin="5dp"
+                android:drawableLeft="@android:drawable/ic_input_add"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回登录"
+                android:id="@+id/back"
+                android:layout_margin="5dp"
+                android:drawableLeft="@android:drawable/ic_input_get"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

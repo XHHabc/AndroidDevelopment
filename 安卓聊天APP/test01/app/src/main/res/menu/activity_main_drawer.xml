@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/liaotian"
+            android:title="聊天列表" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/haoyou"
+            android:title="通讯录" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/tianqi"
+            android:title="天气信息" />
+    </group>
+</menu>
